@@ -16,7 +16,7 @@ clusters:
       eth: 0.1
       gbzz: 2.0
     node-groups:
-      bee:
+      gateway-proxy-bee:
         mode: node
         bee-config: mainnet
         config: mainnet
