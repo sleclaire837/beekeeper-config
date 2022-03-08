@@ -1,0 +1,14 @@
+# bee config for light nodes
+bee-configs:
+  ultra-light-node:
+    _inherit: default
+    full-node: false
+    chain-enable: false
+
+# node groups for light nodes
+node-groups:
+  ultra-light-node:
+    _inherit: default
+    image: ethersphere/bee:latest
+    image-pull-policy: Always
+    persistence-enabled: false

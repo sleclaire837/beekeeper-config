@@ -56,7 +56,11 @@ clusters:
         bee-config: light-node
         config: light-node
         count: 3
-        
+      ultra-light:
+        mode: node
+        bee-config: ultra-light-node
+        config: ultra-light-node
+        count: 3
 
 # node-groups defines node groups that can be registered in the cluster
 # node-groups may inherit it's configuration from already defined node-group and override specific fields from it
