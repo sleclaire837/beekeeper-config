@@ -84,7 +84,7 @@ node-groups:
       app.kubernetes.io/part-of: 'bee'
       app.kubernetes.io/version: 'latest'
     node-selector:
-      node-group: 'private'
+      node-group: 'simulation'
     persistence-enabled: true
     persistence-storage-class: 'local-storage'
     persistence-storage-request: '34Gi'
@@ -341,19 +341,19 @@ checks:
 simulations:
   upload:
     options:
-      file-count:
+      file-count: 200
       gas-price: '10000000000'
-      max-file-size: 2097152 # 2mb = 2*1024*1024
-      min-file-size: 1048576 # 1mb = 1*1024*1024
+      max-file-size: 104857600 # 100mb = 100*1024*1024
+      min-file-size: 83886080 # 80mb = 80*1024*1024
       postage-amount: 1000
       postage-depth: 16
       retries: 5
       retry-delay: 1s
       seed:
-      timeout: 60s
+      timeout: 24h
       upload-node-name:
-      upload-node-percentage: 50
-    timeout: 5m
+      upload-node-percentage: 100
+    timeout: 24h
     type: upload
   retrieval:
     options:
