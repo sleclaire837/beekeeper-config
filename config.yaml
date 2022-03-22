@@ -4,7 +4,7 @@ clusters:
   default:
     _inherit: ''
     name: bee
-    namespace: svetomir
+    namespace: anatol
     disable-namespace: false
     api-domain: staging.internal
     api-insecure-tls: true
@@ -64,7 +64,7 @@ node-groups:
     _inherit: ''
     clef-image: ethersphere/clef:latest
     clef-image-pull-policy: Always
-    image: ethersphere/bee:1.5.0
+    image: anatollupacescu/sync:latest
     image-pull-policy: Always
     image-pull-secrets: [regcred]
     ingress-annotations:
