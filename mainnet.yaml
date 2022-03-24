@@ -1,12 +1,10 @@
-# clusters defines clusters Beekeeper works with
-# clusters may inherit it's configuration from already defined cluster and override specific fields from it
 clusters:
   mainnet:
     _inherit: ""
     name: bee
     namespace: beekeeper
     disable-namespace: true
-    api-domain: gateway.ethswarm.org
+    api-domain: bee-gateway.mainnet.internal
     api-insecure-tls: true
     api-scheme: https
     debug-api-domain: bee-gateway.mainnet.internal
