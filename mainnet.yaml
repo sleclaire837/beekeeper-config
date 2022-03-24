@@ -2,7 +2,7 @@ clusters:
   mainnet:
     _inherit: ""
     name: bee
-    namespace: beekeeper
+    namespace: bee-gateway
     disable-namespace: true
     api-domain: bee-gateway.mainnet.internal
     api-insecure-tls: true
