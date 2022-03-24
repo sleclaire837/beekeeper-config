@@ -4,10 +4,10 @@ clusters:
     name: bee
     namespace: testnet-gateway
     disable-namespace: true
-    api-domain: bee-gateway.testnet.internal
+    api-domain: testnet-gateway.testnet.internal
     api-insecure-tls: true
     api-scheme: https
-    debug-api-domain: bee-gateway.testnet.internal
+    debug-api-domain: testnet-gateway.testnet.internal
     debug-api-insecure-tls: true
     debug-api-scheme: https
     funding:
@@ -18,7 +18,7 @@ clusters:
         mode: node
         bee-config: testnet
         config: testnet
-        count: 10
+        count: 2
 
 # node-groups defines node groups that can be registered in the cluster
 # node-groups may inherit it's configuration from already defined node-group and override specific fields from it
