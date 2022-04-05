@@ -4,7 +4,7 @@ clusters:
   default:
     _inherit: ''
     name: bee
-    namespace: svetomir
+    namespace: anatol
     disable-namespace: false
     api-domain: staging.internal
     api-insecure-tls: true
