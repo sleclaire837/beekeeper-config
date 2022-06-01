@@ -304,7 +304,6 @@ checks:
       postage-amount: 1000000
       postage-depth: 20
       nodes-sync-wait: 450s
-    timeout: 5m
     type: smoke
   soc:
     options:
