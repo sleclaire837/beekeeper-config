@@ -1,0 +1,35 @@
+clusters:
+  incentives-test:
+    _inherit: ""
+    name: incentives-test
+    namespace: incentives-test
+    disable-namespace: true
+    api-domain: incentives-test.testnet.internal
+    api-insecure-tls: true
+    api-scheme: https
+    debug-api-domain: incentives-test.testnet.internal
+    debug-api-insecure-tls: true
+    debug-api-scheme: https
+    funding:
+      eth: 0.1
+      gbzz: 2.0
+    node-groups:
+      bee:
+        mode: node
+        bee-config: incentives-test
+        config: incentives-test
+        count: 5
+
+# node-groups defines node groups that can be registered in the cluster
+# node-groups may inherit it's configuration from already defined node-group and override specific fields from it
+node-groups:
+  incentives-test:
+    _inherit: "default"
+    persistence-enabled: true
+
+# bee-configs defines Bee configuration that can be assigned to node-groups
+# bee-configs may inherit it's configuration from already defined bee-config and override specific fields from it
+bee-configs:
+  incentives-test:
+    _inherit: "default"
+    bootnodes: "/dns4/bootnode-bee-0-headless.incentives-test.svc.cluster.local/tcp/1634/p2p/16Uiu2HAm6i4dFaJt584m2jubyvnieEECgqM2YMpQ9nusXfy8XFzL"
