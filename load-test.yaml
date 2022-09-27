@@ -1,0 +1,45 @@
+clusters:
+  anatol:
+    _inherit: ""
+    name: anatol
+    namespace: anatol
+    disable-namespace: true
+    api-domain: anatol.testnet.internal
+    api-insecure-tls: true
+    api-scheme: https
+    debug-api-domain: anatol.testnet.internal
+    debug-api-insecure-tls: true
+    debug-api-scheme: https
+    funding:
+      eth: 0.1
+      gbzz: 2.0
+    node-groups:
+      full-bee:
+        mode: node
+        bee-config: anatol
+        config: anatol
+        count: 90
+      gateway-bee:
+        mode: node
+        bee-config: anatol
+        config: anatol
+        count: 10
+
+# node-groups defines node groups that can be registered in the cluster
+# node-groups may inherit it's configuration from already defined node-group and override specific fields from it
+node-groups:
+  anatol:
+    _inherit: "default"
+    persistence-enabled: true
+
+# bee-configs defines Bee configuration that can be assigned to node-groups
+# bee-configs may inherit it's configuration from already defined bee-config and override specific fields from it
+bee-configs:
+  anatol:
+    _inherit: "default"
+    bootnodes: "/dns4/bootnode-bee-0-headless.anatol.svc.cluster.local/tcp/1634/p2p/16Uiu2HAm6i4dFaJt584m2jubyvnieEECgqM2YMpQ9nusXfy8XFzL"
+
+# export BOOTNODE_REPLICA=1 #MAX 1
+# export GATEWAY_REPLICA=10 #MAX 10
+# export FULL_REPLICA=90 #MAX 100
+# export LIGHT_REPLICA=0 #MAX 20
