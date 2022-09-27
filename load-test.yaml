@@ -50,7 +50,7 @@ checks:
       content-size: 5000000
       postage-amount: 1000000
       postage-depth: 20
-      nodes-sync-wait: 30s
+      nodes-sync-wait: 10s
       duration: 12h
       downloader-count: 6
       upload-group:
