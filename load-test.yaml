@@ -52,10 +52,10 @@ bee-configs:
 checks:
   load:
     options:
-      content-size: 25000000
+      content-size: 50000000
       postage-amount: 1000000
       postage-depth: 20
-      nodes-sync-wait: 1m
+      nodes-sync-wait: 2m
       duration: 12h
       downloader-count: 90
       upload-group:
