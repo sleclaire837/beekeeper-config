@@ -14,11 +14,16 @@ clusters:
       eth: 0.1
       gbzz: 2.0
     node-groups:
-      full-bee:
+      fullv1-bee:
         mode: node
         bee-config: anatol
         config: anatol
-        count: 90
+        count: 45
+      fullv2-bee:
+        mode: node
+        bee-config: anatol
+        config: anatol
+        count: 45
       gateway-bee:
         mode: node
         bee-config: anatol
