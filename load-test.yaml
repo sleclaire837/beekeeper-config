@@ -64,6 +64,6 @@ checks:
       download-group:
         - fullv1-bee
         - fullv2-bee
-        - light
+        - light-bee
     timeout: 12h
     type: load
