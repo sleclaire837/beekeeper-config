@@ -57,11 +57,11 @@ checks:
       postage-depth: 20
       nodes-sync-wait: 2m
       duration: 12h
-      downloader-count: 90
+      downloader-count: 2
       upload-group:
-        - gateway-bee
+        - bootnode
       download-group:
-        - fullv1-bee
-        - fullv2-bee
+        - bee
+        - light
     timeout: 12h
     type: load
