@@ -57,11 +57,12 @@ checks:
       postage-depth: 20
       nodes-sync-wait: 2m
       duration: 12h
+      uploader-count: 4
       downloader-count: 10
-      upload-group:
+      upload-groups:
         - fullv1-bee
         - fullv2-bee
-      download-group:
+      download-groups:
         - fullv1-bee
         - fullv2-bee
     timeout: 12h
