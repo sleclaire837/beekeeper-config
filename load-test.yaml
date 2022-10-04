@@ -55,10 +55,10 @@ checks:
       content-size: 50000000
       postage-amount: 1000000
       postage-depth: 20
-      nodes-sync-wait: 1m
+      nodes-sync-wait: 30s
       duration: 12h
-      uploader-count: 6
-      downloader-count: 6
+      uploader-count: 8
+      downloader-count: 4
       upload-group:
         - fullv1-bee
         - fullv2-bee
