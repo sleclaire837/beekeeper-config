@@ -60,10 +60,10 @@ checks:
       uploader-count: 1
       downloader-count: 1
       upload-groups:
-        - fullv1-bee
-        # - fullv2-bee
-      download-groups:
         # - fullv1-bee
         - fullv2-bee
+      download-groups:
+        - fullv1-bee
+        # - fullv2-bee
     timeout: 12h
     type: load
