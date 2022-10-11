@@ -311,9 +311,9 @@ checks:
       content-size: 5000000
       postage-amount: 1000000
       postage-depth: 20
-      nodes-sync-wait: 1m
-      duration: 15m
-    timeout: 30m
+      nodes-sync-wait: 450s
+      duration: 12h
+    timeout: 13h
     type: smoke
   soc:
     options:
