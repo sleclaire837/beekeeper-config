@@ -52,8 +52,8 @@ checks:
       postage-depth: 20
       nodes-sync-wait: 30s
       duration: 12h
-      uploader-count: 1
-      downloader-count: 2
+      uploader-count: 2
+      downloader-count: 5
       upload-groups:
         - fullv2-bee
       download-groups:
