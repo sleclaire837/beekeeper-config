@@ -58,12 +58,10 @@ checks:
       nodes-sync-wait: 30s
       duration: 12h
       uploader-count: 1
-      downloader-count: 1
+      downloader-count: 2
       upload-groups:
-        # - fullv1-bee
-        - fullv2-bee
+        - fullv2
       download-groups:
-        - fullv1-bee
-        # - fullv2-bee
+        - fullv2
     timeout: 12h
     type: load
