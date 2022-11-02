@@ -44,11 +44,6 @@ bee-configs:
     _inherit: "default"
     bootnodes: "/dns4/bootnode-bee-0-headless.anatol.svc.cluster.local/tcp/1634/p2p/16Uiu2HAm6i4dFaJt584m2jubyvnieEECgqM2YMpQ9nusXfy8XFzL"
 
-# export BOOTNODE_REPLICA=1 #MAX 1
-# export GATEWAY_REPLICA=10 #MAX 10
-# export FULL_REPLICA=90 #MAX 100
-# export LIGHT_REPLICA=0 #MAX 20
-
 checks:
   load:
     options:
@@ -60,8 +55,8 @@ checks:
       uploader-count: 1
       downloader-count: 2
       upload-groups:
-        - fullv2
+        - fullv2-bee
       download-groups:
-        - fullv2
+        - fullv2-bee
     timeout: 12h
     type: load
