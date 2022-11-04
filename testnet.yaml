@@ -2,12 +2,12 @@ clusters:
   testnet:
     _inherit: ""
     name: bee
-    namespace: testnet-gateway
+    namespace: private-testnet
     disable-namespace: true
-    api-domain: testnet-gateway.testnet.internal
+    api-domain: private-testnet.testnet.internal
     api-insecure-tls: true
     api-scheme: https
-    debug-api-domain: testnet-gateway.testnet.internal
+    debug-api-domain: private-testnet.testnet.internal
     debug-api-insecure-tls: true
     debug-api-scheme: https
     funding:
@@ -33,3 +33,21 @@ bee-configs:
   testnet:
     _inherit: "default"
     bootnodes: "/dnsaddr/testnet.ethswarm.org"
+
+checks:
+  load:
+    options:
+      content-size: 50000000
+      postage-amount: 50000000
+      gas-price: 100000000000
+      postage-depth: 22
+      nodes-sync-wait: 30s
+      duration: 12h
+      uploader-count: 1
+      downloader-count: 0
+      upload-groups:
+        - full-bee
+      download-groups:
+        - full-bee
+    timeout: 12h
+    type: load
