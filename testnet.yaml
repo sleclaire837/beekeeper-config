@@ -46,7 +46,7 @@ checks:
       uploader-count: 1
       downloader-count: 0
       upload-groups:
-        - bee
+        - gateway
       download-groups:
         - bee
     timeout: 12h
