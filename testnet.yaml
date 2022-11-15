@@ -14,7 +14,7 @@ clusters:
       eth: 0.1
       gbzz: 2.0
     node-groups:
-      gateway:
+      gateway-bee:
         mode: node
         bee-config: testnet
         config: testnet
