@@ -37,7 +37,7 @@ bee-configs:
 checks:
   load:
     options:
-      content-size: 9000000
+      content-size: 90000000
       postage-amount: 10000
       gas-price: 150000000000
       postage-depth: 24
