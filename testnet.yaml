@@ -2,28 +2,23 @@ clusters:
   testnet:
     _inherit: ""
     name: bee
-    namespace: private-testnet
+    namespace: testnet-gateway
     disable-namespace: true
-    api-domain: private-testnet.testnet.internal
+    api-domain: testnet-gateway.testnet.internal
     api-insecure-tls: true
     api-scheme: https
-    debug-api-domain: private-testnet.testnet.internal
+    debug-api-domain: testnet-gateway.testnet.internal
     debug-api-insecure-tls: true
     debug-api-scheme: https
     funding:
       eth: 0.1
       gbzz: 2.0
     node-groups:
-      gateway-bee:
+      bee:
         mode: node
         bee-config: testnet
         config: testnet
-        count: 4
-      full-bee:
-        mode: node
-        bee-config: testnet
-        config: testnet
-        count: 30
+        count: 2
 
 # node-groups defines node groups that can be registered in the cluster
 # node-groups may inherit it's configuration from already defined node-group and override specific fields from it
@@ -45,14 +40,14 @@ checks:
       content-size: 50000000
       postage-amount: 10000
       gas-price: 150000000000
-      postage-depth: 24
+      postage-depth: 20
       nodes-sync-wait: 30s
       duration: 12h
       uploader-count: 1
       downloader-count: 0
       upload-groups:
-        - gateway-bee
+        - bee
       download-groups:
-        - full-bee
+        - bee
     timeout: 12h
     type: load
