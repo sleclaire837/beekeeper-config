@@ -37,17 +37,17 @@ bee-configs:
 checks:
   load:
     options:
-      content-size: 50000000
-      postage-amount: 50000000
-      gas-price: 100000000000
-      postage-depth: 22
-      nodes-sync-wait: 30s
+      content-size: 90000000
+      postage-amount: 10000
+      gas-price: 150000000000
+      postage-depth: 24
+      nodes-sync-wait: 10s
       duration: 12h
       uploader-count: 1
       downloader-count: 0
       upload-groups:
-        - full-bee
+        - bee
       download-groups:
-        - full-bee
+        - bee
     timeout: 12h
     type: load
