@@ -176,6 +176,9 @@ bee-configs:
     payment-early-percent: 50
     payment-threshold: 100000000
     payment-tolerance-percent: 25
+    storage-incentives-enable: false
+    staking-address: "0xdF9F798f40187D2F2F56147407dE6Ac8e78331b1"
+    redistribution-address: "0x3D3dF7439F1486b538968276329ABabC12682B9a"
     postage-stamp-address: "0x538e6de1d876bbcd5667085257bc92f7c808a0f3"
     price-oracle-address: "0xfc28330f1ece0ef2371b724e0d19c1ee60b728b2"
     resolver-options: ""
