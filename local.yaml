@@ -176,11 +176,11 @@ bee-configs:
     payment-early-percent: 50
     payment-threshold: 100000000
     payment-tolerance-percent: 25
-    storage-incentives-enable: false
+    storage-incentives-enable: true
     postage-stamp-start-block: 1
     postage-stamp-address: "0x538e6de1d876bbcd5667085257bc92f7c808a0f3"
-    staking-address: "0xdF9F798f40187D2F2F56147407dE6Ac8e78331b1"
-    redistribution-address: "0x3D3dF7439F1486b538968276329ABabC12682B9a"
+    staking-address: "0xc0332d319b73cfeed89511fe1a83add141bd6f12"
+    redistribution-address: "0x56e442f99cafd7c890c404c1f8c16d38a569e41a"
     price-oracle-address: "0xfc28330f1ece0ef2371b724e0d19c1ee60b728b2"
     resolver-options: ""
     restricted: false
@@ -373,3 +373,8 @@ checks:
       role: consumer
       admin-password: test
       restricted-group-name: restricted
+  ci-stake:
+    type: stake
+    timeout: 5m
+    options:
+      amount: 1000000000000000000
