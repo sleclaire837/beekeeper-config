@@ -378,3 +378,12 @@ checks:
     timeout: 5m
     options:
       amount: 1000000000000000000
+  ci-redistribution:
+    options:
+      contract-addr: "0xb8fa76b11A65D11855CC1d218703B52158B65f5a"
+      private-key: "705d3ccf555cc283dcaa71a69611ac41966c664b539f56c8ad6af6b09142bf8b"
+      geth-url: "ws://geth-swap.geth-swap:8546"
+      geth-chain-id: 5
+      from-block: 0
+    timeout: 5m
+    type: redistribution
