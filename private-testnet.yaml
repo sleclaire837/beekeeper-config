@@ -1,8 +1,8 @@
 clusters:
-  private-testnet:
+  anatol:
     _inherit: ""
     name: bee
-    namespace: private-testnet
+    namespace: anatol
     disable-namespace: false
     api-domain: testnet.internal
     api-scheme: http
@@ -19,27 +19,7 @@ clusters:
         bee-config: private-testnet
         config: private-testnet
         count: 4
-      full-0-bee:
-        mode: node
-        bee-config: private-testnet
-        config: private-testnet
-        count: 4
-      full-1-bee:
-        mode: node
-        bee-config: private-testnet
-        config: private-testnet
-        count: 4
-      full-2-bee:
-        mode: node
-        bee-config: private-testnet
-        config: private-testnet
-        count: 4
-      full-3-bee:
-        mode: node
-        bee-config: private-testnet
-        config: private-testnet
-        count: 4
-      full-4-bee:
+      full-bee:
         mode: node
         bee-config: private-testnet
         config: private-testnet
