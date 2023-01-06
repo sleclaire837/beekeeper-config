@@ -66,10 +66,6 @@ checks:
       upload-groups:
         - gateway-bee
       download-groups:
-        - full-0-bee
-        - full-1-bee
-        - full-2-bee
-        - full-3-bee
-        - full-4-bee
+        - full-bee
     timeout: 12h
     type: load
