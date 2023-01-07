@@ -44,8 +44,9 @@ checks:
       uploader-count: 1
       downloader-count: 1
       upload-groups:
-        - gateway-bee
+        - full-bee
       download-groups:
+        - gateway-bee
         - full-bee
     timeout: 12h
     type: load
