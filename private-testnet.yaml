@@ -65,8 +65,13 @@ checks:
       uploader-count: 2
       downloader-count: 1
       upload-groups:
-        - gateway-bee
+        - full-0-bee
+        - full-1-bee
+        - full-2-bee
+        - full-3-bee
+        - full-4-bee
       download-groups:
+        - gateway-bee
         - full-0-bee
         - full-1-bee
         - full-2-bee
