@@ -60,7 +60,7 @@ checks:
       postage-amount: 5000000
       gas-price: 100000000000
       postage-depth: 20
-      nodes-sync-wait: 1m
+      nodes-sync-wait: 2m
       duration: 12h
       uploader-count: 2
       downloader-count: 1
