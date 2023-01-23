@@ -1,0 +1,73 @@
+clusters:
+  pullsync-testnet:
+    _inherit: ""
+    name: bee
+    namespace: pullsync-testnet
+    disable-namespace: false
+    api-domain: testnet.internal
+    api-scheme: http
+    debug-api-domain: testnet.internal
+    debug-api-scheme: http
+    node-groups:
+      bootnode-bee:
+        mode: bootnode
+        bee-config: pullsync-testnet
+        config: pullsync-testnet
+        count: 1
+      gateway-bee:
+        mode: node
+        bee-config: pullsync-testnet
+        config: pullsync-testnet
+        count: 2
+      full-0-bee:
+        mode: node
+        bee-config: pullsync-testnet
+        config: pullsync-testnet
+        count: 2
+      full-1-bee:
+        mode: node
+        bee-config: pullsync-testnet
+        config: pullsync-testnet
+        count: 2
+      full-2-bee:
+        mode: node
+        bee-config: pullsync-testnet
+        config: pullsync-testnet
+        count: 2
+      full-3-bee:
+        mode: node
+        bee-config: pullsync-testnet
+        config: pullsync-testnet
+        count: 2
+      full-4-bee:
+        mode: node
+        bee-config: pullsync-testnet
+        config: pullsync-testnet
+        count: 2
+
+node-groups:
+  pullsync-testnet:
+    _inherit: "default"
+
+bee-configs:
+  pullsync-testnet:
+    _inherit: "default"
+
+
+checks:
+  load:
+    options:
+      content-size: 50000000
+      postage-amount: 50000000
+      gas-price: 100000000000
+      postage-depth: 22
+      nodes-sync-wait: 30s
+      duration: 12h
+      uploader-count: 1
+      downloader-count: 0
+      upload-groups:
+        - gateway-bee
+      download-groups:
+        - gateway-bee
+    timeout: 12h
+    type: load
