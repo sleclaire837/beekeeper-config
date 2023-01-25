@@ -60,22 +60,12 @@ checks:
       postage-amount: 5000000
       gas-price: 100000000000
       postage-depth: 20
-      nodes-sync-wait: 2m
+      nodes-sync-wait: 30s
       duration: 12h
       uploader-count: 2
-      downloader-count: 1
+      downloader-count: 0
       upload-groups:
-        - full-0-bee
-        - full-1-bee
-        - full-2-bee
-        - full-3-bee
-        - full-4-bee
-      download-groups:
         - gateway-bee
-        - full-0-bee
-        - full-1-bee
-        - full-2-bee
-        - full-3-bee
-        - full-4-bee
+      download-groups:
     timeout: 12h
     type: load
