@@ -57,9 +57,9 @@ checks:
   load:
     options:
       content-size: 50000000
-      postage-amount: 100000
+      postage-amount: 1000000
       gas-price: 15000000000
-      postage-depth: 20
+      postage-depth: 22
       nodes-sync-wait: 30s
       duration: 12h
       uploader-count: 2
