@@ -57,7 +57,7 @@ checks:
   load:
     options:
       content-size: 50000000
-      postage-amount: 10000
+      postage-amount: 100000
       gas-price: 15000000000
       postage-depth: 20
       nodes-sync-wait: 30s
