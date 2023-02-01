@@ -33,21 +33,19 @@ bee-configs:
   testnet:
     _inherit: "default"
     bootnodes: "/dnsaddr/testnet.ethswarm.org"
-
+ 
 checks:
   load:
     options:
-      content-size: 90000000
-      postage-amount: 10000
-      gas-price: 150000000000
-      postage-depth: 24
-      nodes-sync-wait: 10s
+      content-size: 50000000
+      postage-amount: 1000000
+      postage-depth: 22
+      nodes-sync-wait: 30s
       duration: 12h
-      uploader-count: 1
+      uploader-count: 2
       downloader-count: 0
       upload-groups:
         - bee
       download-groups:
-        - bee
     timeout: 12h
     type: load
