@@ -16,7 +16,7 @@ clusters:
         count: 1
       gateway-bee:
         mode: node
-        bee-config: gateway-bee
+        bee-config: default
         config: gateway-bee
         count: 4
       full-0-bee:
@@ -53,8 +53,6 @@ node-groups:
 
 bee-configs:
   private-testnet:
-    _inherit: "default"
-  gateway-bee:
     _inherit: "default"
 
 checks:
