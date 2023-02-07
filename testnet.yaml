@@ -35,7 +35,7 @@ bee-configs:
     bootnodes: "/dnsaddr/testnet.ethswarm.org"
 
 checks:
-  load:
+  load-testnet:
     options:
       content-size: 50000000
       postage-amount: 50000000

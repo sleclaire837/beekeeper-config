@@ -54,7 +54,7 @@ bee-configs:
     _inherit: "default"
 
 checks:
-  load:
+  load-private-testnet:
     options:
       content-size: 50000000
       postage-amount: 50000000
