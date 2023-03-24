@@ -34,17 +34,18 @@ bee-configs:
     _inherit: "default"
 
 checks:
-  load-private-testnet:
+  load:
     options:
       content-size: 5000000
       postage-amount: 50000000
       postage-depth: 22
       nodes-sync-wait: 30s
       duration: 12h
-      uploader-count: 2
-      downloader-count: 0
+      uploader-count: 1
+      downloader-count: 1
       upload-groups:
         - gateway-bee
       download-groups:
+        - full-bee
     timeout: 12h
     type: load
