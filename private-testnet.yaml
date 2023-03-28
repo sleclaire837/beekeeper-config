@@ -18,7 +18,7 @@ clusters:
         mode: node
         bee-config: private-testnet
         config: private-testnet
-        count: 4
+        count: 1
       full-bee:
         mode: node
         bee-config: private-testnet
@@ -46,6 +46,6 @@ checks:
       upload-groups:
         - full-bee
       download-groups:
-        - full-bee
+        - gateway-bee
     timeout: 12h
     type: load
