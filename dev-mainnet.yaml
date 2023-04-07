@@ -42,5 +42,5 @@ checks:
       content-size: 5000000
       postage-amount: 103680000
       postage-depth: 20
-    timeout: 365d
+    timeout: 720h
     type: smoke
