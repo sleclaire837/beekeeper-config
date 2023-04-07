@@ -37,12 +37,10 @@ bee-configs:
 # checks defines checks Beekeeper can execute against the cluster
 # type filed allows defining same check with different names and options
 checks:
-  smoke:
+  dev-smoke:
     options:
       content-size: 5000000
-      postage-amount: 1000000
+      postage-amount: 103680000
       postage-depth: 20
-      nodes-sync-wait: 60s
-      duration: 12h
-    timeout: 13h
+    timeout: 365d
     type: smoke
