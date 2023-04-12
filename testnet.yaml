@@ -49,3 +49,10 @@ checks:
       download-groups:
     timeout: 12h
     type: load
+  testnet-smoke:
+    options:
+      content-size: 5000000
+      postage-amount: 1474560
+      postage-depth: 20
+    timeout: 720h
+    type: smoke

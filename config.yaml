@@ -313,7 +313,7 @@ checks:
   smoke:
     options:
       content-size: 5000000
-      postage-amount: 1000000
+      postage-amount: 103680000
       postage-depth: 20
       nodes-sync-wait: 450s
       duration: 12h
