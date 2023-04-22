@@ -38,9 +38,8 @@ checks:
   load:
     options:
       content-size: 50000000
-      postage-amount: 5000000
+      postage-amount: 530841600
       postage-depth: 20
-      nodes-sync-wait: 30s
       duration: 12h
       uploader-count: 1
       downloader-count: 0
