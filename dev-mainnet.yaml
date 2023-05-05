@@ -40,7 +40,8 @@ checks:
   dev-smoke:
     options:
       content-size: 5000000
-      postage-amount: 103680000
+      postage-amount: 224640000
       postage-depth: 20
+      max-use-batch: 12h
     timeout: 720h
     type: smoke
