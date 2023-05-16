@@ -1,0 +1,46 @@
+clusters:
+  private-localstorev2:
+    _inherit: ""
+    name: bee
+    namespace: private-localstorev2
+    disable-namespace: false
+    api-domain: testnet.internal
+    api-scheme: http
+    debug-api-domain: testnet.internal
+    debug-api-scheme: http
+    node-groups:
+      bootnode-bee:
+        mode: bootnode
+        bee-config: private-localstorev2
+        config: private-localstorev2
+        count: 1
+      full-bee:
+        mode: node
+        bee-config: private-localstorev2
+        config: private-localstorev2
+        count: 30
+
+node-groups:
+  private-localstorev2:
+    _inherit: "default"
+
+bee-configs:
+  private-localstorev2:
+    _inherit: "default"
+
+checks:
+  load-private-localstorev2:
+    options:
+      content-size: 50000000
+      postage-amount: 50000000
+      postage-depth: 22
+      nodes-sync-wait: 30s
+      duration: 12h
+      uploader-count: 1
+      downloader-count: 0
+      upload-groups:
+        - full-bee
+      download-groups:
+        - full-bee
+    timeout: 12h
+    type: load
