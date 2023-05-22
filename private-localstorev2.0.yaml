@@ -38,6 +38,7 @@ checks:
       duration: 12h
       uploader-count: 2
       downloader-count: 0
+      max-use-batch: 1h
       upload-groups:
         - full-bee
       download-groups:
