@@ -18,32 +18,17 @@ clusters:
         mode: node
         bee-config: sepolia-testnet
         config: sepolia-testnet
-        count: 4
-      full-0-bee:
+        count: 0
+      full-bee:
         mode: node
         bee-config: sepolia-testnet
         config: sepolia-testnet
-        count: 4
-      full-1-bee:
+        count: 24
+      light-bee:
         mode: node
         bee-config: sepolia-testnet
         config: sepolia-testnet
-        count: 4
-      full-2-bee:
-        mode: node
-        bee-config: sepolia-testnet
-        config: sepolia-testnet
-        count: 4
-      full-3-bee:
-        mode: node
-        bee-config: sepolia-testnet
-        config: sepolia-testnet
-        count: 4
-      full-4-bee:
-        mode: node
-        bee-config: sepolia-testnet
-        config: sepolia-testnet
-        count: 4
+        count: 0
 
 node-groups:
   sepolia-testnet:
