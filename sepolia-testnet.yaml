@@ -39,7 +39,7 @@ bee-configs:
     _inherit: "default"
 
 checks:
-  load-test:
+  load:
     options:
       content-size: 10000000
       postage-amount: 5000000
