@@ -1,8 +1,8 @@
 clusters:
-  sepolia-testnet:
+  private-testnet:
     _inherit: ""
     name: bee
-    namespace: sepolia-testnet
+    namespace: private-testnet
     disable-namespace: false
     api-domain: testnet.internal
     api-scheme: http
@@ -11,46 +11,61 @@ clusters:
     node-groups:
       bootnode-bee:
         mode: bootnode
-        bee-config: sepolia-testnet
-        config: sepolia-testnet
+        bee-config: private-testnet
+        config: private-testnet
         count: 1
       gateway-bee:
         mode: node
-        bee-config: sepolia-testnet
-        config: sepolia-testnet
-        count: 0
-      full-bee:
+        bee-config: private-testnet
+        config: private-testnet
+        count: 4
+      full-0-bee:
         mode: node
-        bee-config: sepolia-testnet
-        config: sepolia-testnet
-        count: 24
-      light-bee:
+        bee-config: private-testnet
+        config: private-testnet
+        count: 4
+      full-1-bee:
         mode: node
-        bee-config: sepolia-testnet
-        config: sepolia-testnet
-        count: 0
+        bee-config: private-testnet
+        config: private-testnet
+        count: 4
+      full-2-bee:
+        mode: node
+        bee-config: private-testnet
+        config: private-testnet
+        count: 4
+      full-3-bee:
+        mode: node
+        bee-config: private-testnet
+        config: private-testnet
+        count: 4
+      full-4-bee:
+        mode: node
+        bee-config: private-testnet
+        config: private-testnet
+        count: 4
 
 node-groups:
-  sepolia-testnet:
+  private-testnet:
     _inherit: "default"
 
 bee-configs:
-  sepolia-testnet:
+  private-testnet:
     _inherit: "default"
 
 checks:
   load-test:
     options:
-      content-size: 10000000
-      postage-amount: 5000000
-      postage-depth: 20
+      content-size: 50000000
+      postage-amount: 50000000
+      postage-depth: 22
       nodes-sync-wait: 30s
       duration: 12h
       uploader-count: 1
-      downloader-count: 2
+      downloader-count: 0
       upload-groups:
-        - full-bee
+        - gateway-bee
       download-groups:
-        - full-bee
+        - gateway-bee
     timeout: 12h
     type: load
