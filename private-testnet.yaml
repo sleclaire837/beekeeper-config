@@ -81,11 +81,30 @@ checks:
       postage-depth: 22
       nodes-sync-wait: 30s
       duration: 12h
-      uploader-count: 1
+      uploader-count: 2
       downloader-count: 0
+      max-use-batch: 1h
       upload-groups:
-        - gateway-bee
+        - full-0-bee
+        - full-1-bee
+        - full-2-bee
+        - full-3-bee
+        - full-4-bee
+        - full-5-bee
+        - full-6-bee
+        - full-7-bee
+        - full-8-bee
+        - full-9-bee
       download-groups:
-        - gateway-bee
+        - full-0-bee
+        - full-1-bee
+        - full-2-bee
+        - full-3-bee
+        - full-4-bee
+        - full-5-bee
+        - full-6-bee
+        - full-7-bee
+        - full-8-bee
+        - full-9-bee
     timeout: 12h
     type: load
