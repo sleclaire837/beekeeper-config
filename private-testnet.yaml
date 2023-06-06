@@ -18,52 +18,42 @@ clusters:
         mode: node
         bee-config: private-testnet
         config: private-testnet
-        count: 100
+        count: 50
       full-1-bee:
         mode: node
         bee-config: private-testnet
         config: private-testnet
-        count: 100
+        count: 50
       full-2-bee:
         mode: node
         bee-config: private-testnet
         config: private-testnet
-        count: 100
+        count: 50
       full-3-bee:
         mode: node
         bee-config: private-testnet
         config: private-testnet
-        count: 100
+        count: 50
       full-4-bee:
         mode: node
         bee-config: private-testnet
         config: private-testnet
-        count: 100
+        count: 50
       full-5-bee:
         mode: node
         bee-config: private-testnet
         config: private-testnet
-        count: 100
+        count: 50
       full-6-bee:
         mode: node
         bee-config: private-testnet
         config: private-testnet
-        count: 100
+        count: 50
       full-7-bee:
         mode: node
         bee-config: private-testnet
         config: private-testnet
-        count: 100
-      full-8-bee:
-        mode: node
-        bee-config: private-testnet
-        config: private-testnet
-        count: 100
-      full-9-bee:
-        mode: node
-        bee-config: private-testnet
-        config: private-testnet
-        count: 100
+        count: 50
 
 node-groups:
   private-testnet:
@@ -93,8 +83,6 @@ checks:
         - full-5-bee
         - full-6-bee
         - full-7-bee
-        - full-8-bee
-        - full-9-bee
       download-groups:
         - full-0-bee
         - full-1-bee
@@ -104,7 +92,5 @@ checks:
         - full-5-bee
         - full-6-bee
         - full-7-bee
-        - full-8-bee
-        - full-9-bee
     timeout: 12h
     type: load
