@@ -94,3 +94,12 @@ checks:
         - full-7-bee
     timeout: 12h
     type: load
+  smoke-private-testnet:
+    options:
+      content-size: 5000000
+      postage-amount: 1000000
+      postage-depth: 20
+      nodes-sync-wait: 1m
+      duration: 12h
+    timeout: 5m
+    type: smoke
