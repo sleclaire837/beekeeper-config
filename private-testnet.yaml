@@ -101,5 +101,5 @@ checks:
       postage-depth: 20
       nodes-sync-wait: 1m
       duration: 12h
-    timeout: 5m
+    timeout: 720h
     type: smoke
