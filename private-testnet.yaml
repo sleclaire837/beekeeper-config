@@ -83,6 +83,8 @@ checks:
         - full-5-bee
         - full-6-bee
         - full-7-bee
+        - full-8-bee
+        - full-9-bee
       download-groups:
         - full-0-bee
         - full-1-bee
@@ -92,6 +94,8 @@ checks:
         - full-5-bee
         - full-6-bee
         - full-7-bee
+        - full-8-bee
+        - full-9-bee
     timeout: 12h
     type: load
   smoke-private-testnet:
