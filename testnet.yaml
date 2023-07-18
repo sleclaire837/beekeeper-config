@@ -41,11 +41,12 @@ checks:
       postage-amount: 530841600
       postage-depth: 20
       duration: 12h
-      uploader-count: 1
+      uploader-count: 2
       downloader-count: 0
       upload-groups:
         - bee
       download-groups:
+        - bee
     timeout: 12h
     type: load
   testnet-smoke:
