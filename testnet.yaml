@@ -43,6 +43,7 @@ checks:
       duration: 12h
       uploader-count: 2
       downloader-count: 0
+      max-use-batch: 1h
       upload-groups:
         - bee
       download-groups:
@@ -54,5 +55,6 @@ checks:
       content-size: 5000000
       postage-amount: 2949120
       postage-depth: 20
+      max-use-batch: 1h
     timeout: 12h
     type: smoke
