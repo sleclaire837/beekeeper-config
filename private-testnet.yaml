@@ -23,7 +23,7 @@ clusters:
         mode: node
         bee-config: private-testnet
         config: private-testnet
-        count: 4
+        count: 15
 
 node-groups:
   private-testnet:
