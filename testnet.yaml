@@ -54,7 +54,7 @@ checks:
     options:
       content-size: 5000000
       postage-amount: 3194880
-      postage-depth: 20
-      max-use-batch: 1h
+      postage-depth: 24
+      max-use-batch: 12h
     timeout: 12h
     type: smoke

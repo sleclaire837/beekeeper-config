@@ -39,7 +39,7 @@ bee-configs:
 checks:
   dev-smoke:
     options:
-      content-size: 10000000
+      content-size: 5000000
       postage-amount: 423360000 #24000/5*60*60*24.5
       postage-depth: 24
       max-use-batch: 24h
