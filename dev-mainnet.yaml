@@ -44,3 +44,10 @@ checks:
       postage-depth: 20
     timeout: 720h
     type: smoke
+  dev-availability:
+    options:
+      refs:
+      retry-wait: 1m
+      retry-count: 3
+    timeout: 720h
+    type: longavailability
