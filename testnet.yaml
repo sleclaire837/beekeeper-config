@@ -53,8 +53,7 @@ checks:
   testnet-smoke:
     options:
       content-size: 5000000
-      postage-amount: 41287680 # 7 days
+      postage-amount: 41287680 # 1024/15*60*60*24*7
       postage-depth: 24
-      max-use-batch: 156h #6.5 days
     timeout: 720h
     type: smoke
