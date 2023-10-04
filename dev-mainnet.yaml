@@ -45,3 +45,10 @@ checks:
       max-use-batch: 24h
     timeout: 720h
     type: smoke
+  dev-availability:
+    options:
+      refs:
+      retry-wait: 1m
+      retry-count: 3
+    timeout: 720h
+    type: longavailability
