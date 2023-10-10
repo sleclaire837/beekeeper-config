@@ -1,0 +1,60 @@
+clusters:
+  ph4:
+    _inherit: ""
+    name: bee
+    namespace: ph4
+    disable-namespace: false
+    api-domain: testnet.internal
+    api-scheme: http
+    debug-api-domain: testnet.internal
+    debug-api-scheme: http
+    node-groups:
+      bootnode-bee:
+        mode: bootnode
+        bee-config: ph4
+        config: ph4
+        count: 1
+      full-bee:
+        mode: node
+        bee-config: ph4
+        config: ph4
+        count: 20
+      gateway-bee:
+        mode: node
+        bee-config: ph4
+        config: ph4
+        count: 2
+
+node-groups:
+  ph4:
+    _inherit: "default"
+
+bee-configs:
+  ph4:
+    _inherit: "default"
+
+checks:
+  load-ph4:
+    options:
+      content-size: 50000000
+      postage-amount: 50000001
+      postage-depth: 24
+      nodes-sync-wait: 30s
+      duration: 12h
+      uploader-count: 3
+      downloader-count: 0
+      max-use-batch: 1h
+      upload-groups:
+        - full-bee
+        - gateway-bee
+    timeout: 12h
+    type: load
+  smoke-ph4:
+    options:
+      content-size: 5000000
+      postage-amount: 1000000
+      postage-depth: 20
+      nodes-sync-wait: 1m
+      duration: 12h
+    timeout: 720h
+    type: smoke
