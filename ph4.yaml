@@ -41,7 +41,7 @@ checks:
       postage-depth: 24
       nodes-sync-wait: 30s
       duration: 12h
-      uploader-count: 2
+      uploader-count: 3
       downloader-count: 0
       max-use-batch: 1h
       upload-groups:
