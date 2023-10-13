@@ -39,8 +39,9 @@ bee-configs:
 checks:
   mainnet-smoke:
     options:
-      content-size: 50000000
-      postage-amount: 2903040000 # 24000/5*60*60*24*7
-      postage-depth: 22
+      content-size: 5000000
+      postage-amount: 74880000
+      postage-depth: 20
+      max-use-batch: 12h
     timeout: 720h
     type: smoke
