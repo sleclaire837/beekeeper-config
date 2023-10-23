@@ -1,0 +1,4 @@
+bee-configs:
+  light-node:
+    _inherit: default
+    full-node: false
