@@ -11,7 +11,7 @@ clusters:
     debug-api-scheme: http
     admin-password: test
     funding:
-      eth: 0.1
+      eth: 100
       bzz: 100.0
     node-groups:
       bootnode:
