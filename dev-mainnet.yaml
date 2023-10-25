@@ -50,5 +50,6 @@ checks:
         - "0218341926eb1844217ea6c10f4fa910e1f07c69748ffae7ca82ad8eaf951670"
       retry-wait: 1m
       retry-count: 3
+      next-iter-wait: 1h
     timeout: 720h
     type: longavailability
