@@ -48,6 +48,8 @@ checks:
     options:
       refs:
         - "0218341926eb1844217ea6c10f4fa910e1f07c69748ffae7ca82ad8eaf951670"
+        - "d5fc0a2753360ddfb1825fb2d979031d4b620ddabd3e0aea69b685109ee357fe"
+        - "1cfd24178c67b708694b4ce4235d32e2a39d42813d2b09d1ef77eaa4c954931f"
       retry-wait: 1m
       retry-count: 3
       next-iter-wait: 6h
